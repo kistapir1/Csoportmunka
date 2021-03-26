@@ -11,7 +11,6 @@ class Szam:
         self.nulla()
         self.egy()
         self.nine()
-        self.three()
         self.screen.mainloop()
 
 
