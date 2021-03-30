@@ -20,6 +20,9 @@ class Szam:
         self.screen.mainloop()
 
     def zero(self):
+        x = self.t.xcor()
+        y = self.t.ycor()
+        rot = self.t.heading()
         self.t.color("black")
         self.t.fillcolor("light green")
         self.t.begin_fill()
@@ -134,8 +137,13 @@ class Szam:
         self.t.left(45)
         self.t.forward(40)
         self.t.end_fill()
+        self.t.goto(x, y)
+        self.t.setheading(rot)
 
     def one(self):
+        x1 = self.t.xcor()
+        y1 = self.t.ycor()
+        rot1 = self.t.heading()
         self.t.color("black")
         self.t.fillcolor("black")
         self.t.begin_fill()
@@ -250,8 +258,13 @@ class Szam:
         self.t.left(45)
         self.t.forward(40)
         self.t.end_fill()
+        self.t.goto(x1, y1)
+        self.t.setheading(rot1)
 
     def two(self):
+        x2 = self.t.xcor()
+        y2 = self.t.ycor()
+        rot2 = self.t.heading()
         self.t.color("black")
         self.t.fillcolor("light green")
         self.t.begin_fill()
@@ -366,8 +379,14 @@ class Szam:
         self.t.left(45)
         self.t.forward(40)
         self.t.end_fill()
+        self.t.end_fill()
+        self.t.goto(x2, y2)
+        self.t.setheading(rot2)
 
     def three(self):
+        x3 = self.t.xcor()
+        y3 = self.t.ycor()
+        rot3 = self.t.heading()
         self.t.color("black")
         self.t.fillcolor("light green")
         self.t.begin_fill()
@@ -482,8 +501,13 @@ class Szam:
         self.t.left(45)
         self.t.forward(40)
         self.t.end_fill()
+        self.t.goto(x3, y3)
+        self.t.setheading(rot3)
 
     def four(self):
+        x4 = self.t.xcor()
+        y4 = self.t.ycor()
+        rot4 = self.t.heading()
         self.t.color("black")
         self.t.fillcolor("black")
         self.t.begin_fill()
@@ -598,8 +622,13 @@ class Szam:
         self.t.left(45)
         self.t.forward(40)
         self.t.end_fill()
+        self.t.goto(x4, y4)
+        self.t.setheading(rot4)
 
     def five(self):
+        x5 = self.t.xcor()
+        y5 = self.t.ycor()
+        rot5 = self.t.heading()
         self.t.color("black")
         self.t.fillcolor("light green")
         self.t.begin_fill()
@@ -714,8 +743,13 @@ class Szam:
         self.t.left(45)
         self.t.forward(40)
         self.t.end_fill()
+        self.t.goto(x5, y5)
+        self.t.setheading(rot5)
 
     def six(self):
+        x6 = self.t.xcor()
+        y6 = self.t.ycor()
+        rot6 = self.t.heading()
         self.t.color("black")
         self.t.fillcolor("light green")
         self.t.begin_fill()
@@ -830,8 +864,13 @@ class Szam:
         self.t.left(45)
         self.t.forward(40)
         self.t.end_fill()
+        self.t.goto(x6, y6)
+        self.t.setheading(rot6)
 
     def seven(self):
+            x7 = self.t.xcor()
+            y7= self.t.ycor()
+            rot7 = self.t.heading()
             self.t.color("black")
             self.t.fillcolor("black")
             self.t.begin_fill()
@@ -946,8 +985,13 @@ class Szam:
             self.t.left(45)
             self.t.forward(40)
             self.t.end_fill()
+            self.t.goto(x7, y7)
+            self.t.setheading(rot7)
 
     def eight(self):
+        x8 = self.t.xcor()
+        y8 = self.t.ycor()
+        rot8 = self.t.heading()
         self.t.color("green")
         self.t.fillcolor("light green")
         self.t.begin_fill()
@@ -1062,8 +1106,13 @@ class Szam:
         self.t.left(45)
         self.t.forward(40)
         self.t.end_fill()
+        self.t.goto(x8, y8)
+        self.t.setheading(rot8)
 
     def nine(self):
+        x9 = self.t.xcor()
+        y9 = self.t.ycor()
+        rot9 = self.t.heading()
         self.t.color("black")
         self.t.fillcolor("light green")
         self.t.begin_fill()
@@ -1178,5 +1227,7 @@ class Szam:
         self.t.left(45)
         self.t.forward(40)
         self.t.end_fill()
+        self.t.goto(x9, y9)
+        self.t.setheading(rot9)
 
 Szam()
