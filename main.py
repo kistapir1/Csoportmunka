@@ -539,7 +539,7 @@ class Szam:
         x8 = self.t.xcor()
         y8 = self.t.ycor()
         rot8 = self.t.heading()
-        self.t.color("green")
+        self.t.color("black")
         self.trapez()
 
         self.t.penup()
