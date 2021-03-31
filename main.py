@@ -19,11 +19,7 @@ class Szam:
         self.nine()
         self.screen.mainloop()
 
-    def zero(self):
-        x = self.t.xcor()
-        y = self.t.ycor()
-        rot = self.t.heading()
-        self.t.color("black")
+    def trapez(self):
         self.t.fillcolor("light green")
         self.t.begin_fill()
         self.t.forward(130)
@@ -34,6 +30,59 @@ class Szam:
         self.t.left(45)
         self.t.forward(50)
         self.t.end_fill()
+
+    def trapez_gone(self):
+        self.t.fillcolor("black")
+        self.t.begin_fill()
+        self.t.forward(130)
+        self.t.left(135)
+        self.t.forward(50)
+        self.t.left(45)
+        self.t.forward(60)
+        self.t.left(45)
+        self.t.forward(50)
+        self.t.end_fill()
+
+    def middle(self):
+        self.t.fillcolor("light green")
+        self.t.begin_fill()
+        self.t.forward(40)
+        self.t.left(45)
+        self.t.forward(60)
+        self.t.left(45)
+        self.t.forward(40)
+        self.t.left(90)
+        self.t.forward(40)
+        self.t.left(45)
+        self.t.forward(60)
+        self.t.left(45)
+        self.t.forward(40)
+        self.t.end_fill()
+
+    def middle_gone(self):
+        self.t.fillcolor("black")
+        self.t.begin_fill()
+        self.t.forward(40)
+        self.t.left(45)
+        self.t.forward(60)
+        self.t.left(45)
+        self.t.forward(40)
+        self.t.left(90)
+        self.t.forward(40)
+        self.t.left(45)
+        self.t.forward(60)
+        self.t.left(45)
+        self.t.forward(40)
+        self.t.end_fill()
+
+
+    def zero(self):
+        x = self.t.xcor()
+        y = self.t.ycor()
+        rot = self.t.heading()
+        self.t.color("black")
+        self.t.fillcolor("light green")
+        self.trapez()
 
         self.t.penup()
         self.t.right(45)
@@ -378,7 +427,6 @@ class Szam:
         self.t.forward(60)
         self.t.left(45)
         self.t.forward(40)
-        self.t.end_fill()
         self.t.end_fill()
         self.t.goto(x2, y2)
         self.t.setheading(rot2)
