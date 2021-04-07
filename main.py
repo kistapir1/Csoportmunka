@@ -1,5 +1,5 @@
 from turtle import *
-from datetime import *
+
 
 class Szam:
     screen = Screen()
