@@ -1,4 +1,5 @@
 from turtle import *
+from datetime import *
 
 class Szam:
     screen = Screen()
@@ -8,7 +9,7 @@ class Szam:
     def __init__(self):
         self.screen.delay(0)
         self.t.backward(400)
-        self.clock()
+        self.position()
         #self.zero()
         #self.one()
         #self.two()
@@ -654,7 +655,7 @@ class Szam:
         self.t.goto(x9, y9)
         self.t.setheading(rot9)
 
-    def clock(self):
+    def position(self):
         self.eight()
         self.t.forward(200)
         self.eight()
@@ -673,6 +674,7 @@ class Szam:
         self.eight()
         self.t.forward(200)
         self.eight()
+
 
 
 Szam()
