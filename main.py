@@ -7,17 +7,20 @@ class Szam:
 
     def __init__(self):
         self.screen.delay(0)
-        self.zero()
-        self.one()
-        self.two()
-        self.three()
-        self.four()
-        self.five()
-        self.six()
-        self.seven()
-        self.eight()
-        self.nine()
+        self.t.backward(400)
+        self.clock()
+        #self.zero()
+        #self.one()
+        #self.two()
+        #self.three()
+        #self.four()
+        #self.five()
+        #self.six()
+        #self.seven()
+        #self.eight()
+        #self.nine()
         self.screen.mainloop()
+
 
     def trapez(self):
         self.t.fillcolor("light green")
@@ -44,7 +47,7 @@ class Szam:
         self.t.end_fill()
 
     def trapezgone(self):
-        self.t.fillcolor("black")
+        self.t.fillcolor(0, 0.2, 0)
         self.t.begin_fill()
         self.t.forward(130)
         self.t.left(135)
@@ -56,7 +59,7 @@ class Szam:
         self.t.end_fill()
 
     def trapez2gone(self):
-        self.t.fillcolor("black")
+        self.t.fillcolor(0, 0.2, 0)
         self.t.begin_fill()
         self.t.forward(130)
         self.t.right(135)
@@ -84,7 +87,7 @@ class Szam:
         self.t.end_fill()
 
     def middlegone(self):
-        self.t.fillcolor("black")
+        self.t.fillcolor(0, 0.2, 0)
         self.t.begin_fill()
         self.t.forward(40)
         self.t.left(45)
@@ -97,6 +100,14 @@ class Szam:
         self.t.forward(60)
         self.t.left(45)
         self.t.forward(40)
+        self.t.end_fill()
+
+    def circle(self):
+        self.t.fillcolor("light green")
+        self.t.begin_fill()
+        for a in range(90):
+            self.t.forward(1)
+            self.t.right(4)
         self.t.end_fill()
 
 
@@ -642,5 +653,26 @@ class Szam:
         self.middle()
         self.t.goto(x9, y9)
         self.t.setheading(rot9)
+
+    def clock(self):
+        self.eight()
+        self.t.forward(200)
+        self.eight()
+        self.t.forward(190)
+        x0 = self.t.xcor()
+        y0 = self.t.ycor()
+        rot = self.t.heading()
+        self.t.left(90)
+        self.t.forward(80)
+        self.circle()
+        self.t.forward(100)
+        self.circle()
+        self.t.goto(x0, y0)
+        self.t.setheading(rot)
+        self.t.forward(90)
+        self.eight()
+        self.t.forward(200)
+        self.eight()
+
 
 Szam()
