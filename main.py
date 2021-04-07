@@ -48,7 +48,7 @@ class Szam:
         self.t.end_fill()
 
     def trapezgone(self):
-        self.t.fillcolor(0, 0.2, 0)
+        self.t.fillcolor(0, 0.1, 0)
         self.t.begin_fill()
         self.t.forward(130)
         self.t.left(135)
@@ -60,7 +60,7 @@ class Szam:
         self.t.end_fill()
 
     def trapez2gone(self):
-        self.t.fillcolor(0, 0.2, 0)
+        self.t.fillcolor(0, 0.1, 0)
         self.t.begin_fill()
         self.t.forward(130)
         self.t.right(135)
@@ -88,7 +88,7 @@ class Szam:
         self.t.end_fill()
 
     def middlegone(self):
-        self.t.fillcolor(0, 0.2, 0)
+        self.t.fillcolor(0, 0.1, 0)
         self.t.begin_fill()
         self.t.forward(40)
         self.t.left(45)
