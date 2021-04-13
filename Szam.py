@@ -2,12 +2,13 @@ from turtle import *
 
 
 class Szam:
-    #screen = Screen()
-    t = Turtle()
-    #screen.bgcolor("black")
+    screen = Screen()
+    t:Turtle
+
 
     def __init__(self):
-        self.screen.delay(0)
+        self.t=Turtle()
+        self.screen._delay(0)
         self.t.speed(0)
         # self.t.backward(400)
         # self.position()
