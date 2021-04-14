@@ -676,6 +676,7 @@ class Szam:
         self.t.setheading(rot9)
 
     def pontok(self):
+        rot10 = self.t.heading()
         self.t.left(90)
         self.t.forward(80)
         self.circle()
@@ -683,6 +684,7 @@ class Szam:
         self.circle()
         self.t.penup()
         self.t.goto(0, 1000)
+        self.t.setheading(rot10)
 
 
 
