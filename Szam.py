@@ -3,7 +3,7 @@ from turtle import *
 
 class Szam:
     screen = Screen()
-    t:Turtle
+    t = Turtle
 
 
     def __init__(self):
@@ -118,6 +118,7 @@ class Szam:
         x = self.t.xcor()
         y = self.t.ycor()
         rot = self.t.heading()
+        self.t.pendown()
         self.t.color("black")
         self.trapez()
 
@@ -165,6 +166,7 @@ class Szam:
         self.t.right(45)
         self.t.pendown()
         self.middlegone()
+        self.t.penup()
         self.t.goto(x, y)
         self.t.setheading(rot)
 
@@ -172,6 +174,7 @@ class Szam:
         x1 = self.t.xcor()
         y1 = self.t.ycor()
         rot1 = self.t.heading()
+        self.t.pendown()
         self.t.color("black")
         self.trapezgone()
 
@@ -219,6 +222,7 @@ class Szam:
         self.t.right(45)
         self.t.pendown()
         self.middlegone()
+        self.t.penup()
         self.t.goto(x1, y1)
         self.t.setheading(rot1)
 
@@ -226,9 +230,8 @@ class Szam:
         x2 = self.t.xcor()
         y2 = self.t.ycor()
         rot2 = self.t.heading()
+        self.t.pendown()
         self.t.color("black")
-        self.t.fillcolor("light green")
-        self.t.begin_fill()
         self.trapez()
 
         self.t.penup()
@@ -275,6 +278,7 @@ class Szam:
         self.t.right(45)
         self.t.pendown()
         self.middle()
+        self.t.penup()
         self.t.goto(x2, y2)
         self.t.setheading(rot2)
 
@@ -282,6 +286,7 @@ class Szam:
         x3 = self.t.xcor()
         y3 = self.t.ycor()
         rot3 = self.t.heading()
+        self.t.pendown()
         self.t.color("black")
         self.trapez()
 
@@ -330,6 +335,7 @@ class Szam:
         self.t.right(45)
         self.t.pendown()
         self.middle()
+        self.t.penup()
         self.t.goto(x3, y3)
         self.t.setheading(rot3)
 
@@ -337,6 +343,7 @@ class Szam:
         x4 = self.t.xcor()
         y4 = self.t.ycor()
         rot4 = self.t.heading()
+        self.t.pendown()
         self.t.color("black")
         self.trapezgone()
 
@@ -384,6 +391,7 @@ class Szam:
         self.t.right(45)
         self.t.pendown()
         self.middle()
+        self.t.penup()
         self.t.goto(x4, y4)
         self.t.setheading(rot4)
 
@@ -391,6 +399,7 @@ class Szam:
         x5 = self.t.xcor()
         y5 = self.t.ycor()
         rot5 = self.t.heading()
+        self.t.pendown()
         self.t.color("black")
         self.trapez()
 
@@ -438,6 +447,7 @@ class Szam:
         self.t.right(45)
         self.t.pendown()
         self.middle()
+        self.t.penup()
         self.t.goto(x5, y5)
         self.t.setheading(rot5)
 
@@ -445,6 +455,7 @@ class Szam:
         x6 = self.t.xcor()
         y6 = self.t.ycor()
         rot6 = self.t.heading()
+        self.t.pendown()
         self.t.color("black")
         self.trapez()
 
@@ -492,6 +503,7 @@ class Szam:
         self.t.right(45)
         self.t.pendown()
         self.middle()
+        self.t.penup()
         self.t.goto(x6, y6)
         self.t.setheading(rot6)
 
@@ -499,6 +511,7 @@ class Szam:
             x7 = self.t.xcor()
             y7= self.t.ycor()
             rot7 = self.t.heading()
+            self.t.pendown()
             self.t.color("black")
             self.trapezgone()
 
@@ -546,6 +559,7 @@ class Szam:
             self.t.right(45)
             self.t.pendown()
             self.middlegone()
+            self.t.penup()
             self.t.goto(x7, y7)
             self.t.setheading(rot7)
 
@@ -553,6 +567,7 @@ class Szam:
         x8 = self.t.xcor()
         y8 = self.t.ycor()
         rot8 = self.t.heading()
+        self.t.pendown()
         self.t.color("black")
         self.trapez()
 
@@ -600,6 +615,7 @@ class Szam:
         self.t.right(45)
         self.t.pendown()
         self.middle()
+        self.t.penup()
         self.t.goto(x8, y8)
         self.t.setheading(rot8)
 
@@ -607,6 +623,7 @@ class Szam:
         x9 = self.t.xcor()
         y9 = self.t.ycor()
         rot9 = self.t.heading()
+        self.t.pendown()
         self.t.color("black")
         self.trapez()
 
@@ -654,28 +671,18 @@ class Szam:
         self.t.right(45)
         self.t.pendown()
         self.middle()
+        self.t.penup()
         self.t.goto(x9, y9)
         self.t.setheading(rot9)
 
-    def position(self):
-        self.eight()
-        self.t.forward(200)
-        self.eight()
-        self.t.forward(190)
-        x0 = self.t.xcor()
-        y0 = self.t.ycor()
-        rot = self.t.heading()
+    def pontok(self):
         self.t.left(90)
         self.t.forward(80)
         self.circle()
         self.t.forward(100)
         self.circle()
-        self.t.goto(x0, y0)
-        self.t.setheading(rot)
-        self.t.forward(90)
-        self.eight()
-        self.t.forward(200)
-        self.eight()
+        self.t.penup()
+        self.t.goto(0, 1000)
 
 
 
