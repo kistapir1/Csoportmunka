@@ -1,10 +1,11 @@
 from turtle import *
+from Clock import Clock
 
 
 class Szam:
     screen = Screen()
     t = Turtle
-
+    clk = Clock(screen)
 
     def __init__(self):
         self.t=Turtle()
@@ -21,8 +22,7 @@ class Szam:
         # self.six()
         # self.seven()
         # self.eight()
-        # self.nine()
-        # self.screen.mainloop()
+        #self.nine()
 
 
     def trapez(self):
@@ -686,4 +686,3 @@ class Szam:
 
 
 
-#Szam()

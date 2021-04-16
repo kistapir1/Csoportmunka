@@ -5,8 +5,8 @@ from Clock import Clock
 class main:
     screen = Screen()
     clk = Clock(screen)
-    #secondleft=Szam()
-    #secondright=Szam()
+    secondleft=Szam()
+    secondright=Szam()
     Sz1 = Szam()
     Sz2 = Szam()
     Sz3 = Szam()
@@ -19,23 +19,32 @@ class main:
     Sz4.t.goto(300, 0)
     def Second(self):
         print(self.clk.sec())
-        #self.secondright.two()
-        #self.secondleft.five()
+        if self.clk.leftNumber(self.clk.sec()) == 0:
+            self.secondleft.zero()
+        if self.clk.leftNumber(self.clk.sec()) == 1:
+            self.secondleft.one()
+        if self.clk.leftNumber(self.clk.sec()) == 2:
+            self.secondleft.two()
+        if self.clk.leftNumber(self.clk.sec()) == 3:
+            self.secondleft.three()
+        if self.clk.leftNumber(self.clk.sec()) == 4:
+            self.secondleft.four()
 
-    def Minute(self):
-        print(self.clk.min())
+
+
+
 
     def __init__(self):
         self.screen.bgcolor("black")
         self.clk.setOnSecondChangeListener(self.Second)
-        self.clk.setOnMinuteChangeListener(self.Minute)
+        #self.clk.setOnMinuteChangeListener(self.Minute)
         #self.secondright.t.forward(150)
         #self.secondright.five()
-        self.Sz1.two()
-        self.Sz2.two()
-        self.points.pontok()
-        self.Sz3.two()
-        self.Sz4.two()
+        # self.Sz1.two()
+        # self.Sz2.two()
+        # self.points.pontok()
+        #self.Sz3.two()
+        #self.Sz4.two()
 
 
 
