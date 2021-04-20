@@ -11,12 +11,8 @@ class main:
     minuteright=Szam()
     hourright=Szam()
     hourleft=Szam()
-
-    # Sz1 = Szam()
-    # Sz2 = Szam()
-    # Sz3 = Szam()
-    # Sz4 = Szam()
     points = Szam()
+    screen._delay(0)
 
     hourleft.t.goto(-900, 0)
     hourright.t.goto(-700, 0)
@@ -46,7 +42,7 @@ class main:
         self.screen.bgcolor("black")
         self.clk.setOnSecondChangeListener(self.Second)
         self.clk.setOnMinuteChangeListener(self.Minute)
-        self.clk.setOnHourChangeListener(self.Hour())
+        self.clk.setOnHourChangeListener(self.Hour)
 
 
 

@@ -3,13 +3,13 @@ from Clock import Clock
 
 
 class Szam:
-    screen = Screen()
-    t = Turtle
-    clk = Clock(screen)
+    #screen = Screen()
+    t:Turtle
+    #clk = Clock(screen)
 
     def __init__(self):
         self.t=Turtle()
-        self.screen._delay(0)
+        #self.screen._delay(0)
         self.t.speed(0)
         # self.t.backward(400)
         # self.position()
