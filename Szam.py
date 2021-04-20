@@ -23,6 +23,48 @@ class Szam:
         # self.seven()
         # self.eight()
         #self.nine()
+    def Szamok(self, Szam:int):
+        if Szam == 0:
+            self.zero()
+        if Szam== 1:
+            self.one()
+        if Szam== 2:
+            self.two()
+        if Szam== 3:
+            self.three()
+        if Szam == 4:
+            self.four()
+        if Szam== 5:
+            self.five()
+        if Szam== 6:
+            self.six()
+        if Szam== 7:
+            self.seven()
+        if Szam== 8:
+            self.eight()
+        if Szam== 9:
+            self.nine()
+    def Szamokxd(self, Szam:int):
+        if Szam == 0:
+            self.zero()
+        if Szam== 1:
+            self.one()
+        if Szam== 2:
+            self.two()
+        if Szam== 3:
+            self.three()
+        if Szam == 4:
+            self.four()
+        if Szam== 5:
+            self.five()
+        if Szam== 6:
+            self.six()
+        if Szam== 7:
+            self.seven()
+        if Szam== 8:
+            self.eight()
+        if Szam== 9:
+            self.nine()
 
 
     def trapez(self):
