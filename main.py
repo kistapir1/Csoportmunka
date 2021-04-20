@@ -9,12 +9,17 @@ class main:
     secondright=Szam()
     minuteleft=Szam()
     minuteright=Szam()
+    hourright=Szam()
+    hourleft=Szam()
+
     # Sz1 = Szam()
     # Sz2 = Szam()
     # Sz3 = Szam()
     # Sz4 = Szam()
     points = Szam()
 
+    hourleft.t.goto(-900, 0)
+    hourright.t.goto(-700, 0)
     minuteleft.t.goto(-400, 0)
     minuteright.t.goto(-200, 0)
     secondleft.t.goto(100, 0)
@@ -29,6 +34,11 @@ class main:
         self.minuteleft.Szamokxd(self.clk.leftNumber(self.clk.min()))
         self.minuteright.Szamokxd(self.clk.rightNumber(self.clk.min()))
 
+    def Hour(self):
+        print(self.clk.hour24())
+        self.hourleft.Szamokxdd(self.clk.leftNumber(self.clk.hour24()))
+        self.hourright.Szamokxdd(self.clk.rightNumber(self.clk.hour24()))
+
 
 
 
@@ -36,13 +46,8 @@ class main:
         self.screen.bgcolor("black")
         self.clk.setOnSecondChangeListener(self.Second)
         self.clk.setOnMinuteChangeListener(self.Minute)
-        #self.secondright.t.forward(150)
-        #self.secondright.five()
-        # self.Sz1.two()
-        # self.Sz2.two()
-        # self.points.pontok()
-        #self.Sz3.two()
-        #self.Sz4.two()
+        self.clk.setOnHourChangeListener(self.Hour())
+
 
 
 
