@@ -14,26 +14,27 @@ class main:
     points = Szam()
     screen._delay(0)
 
-    hourleft.t.goto(-900, 0)
-    hourright.t.goto(-700, 0)
-    minuteleft.t.goto(-400, 0)
-    minuteright.t.goto(-200, 0)
-    secondleft.t.goto(100, 0)
-    secondright.t.goto(300, 0)
+    hourleft.t.goto(-500, 0)
+    hourright.t.goto(-300, 0)
+    points.t.goto(-100, 0)
+    minuteleft.t.goto(0, 0)
+    minuteright.t.goto(200, 0)
+    secondleft.t.goto(375, 280)
+    secondright.t.goto(475, 280)
     def Second(self):
         print(self.clk.sec())
-        self.secondleft.Szamok(self.clk.leftNumber(self.clk.sec()))
-        self.secondright.Szamok(self.clk.rightNumber(self.clk.sec()))
+        self.secondleft.Szamokmini(self.clk.leftNumber(self.clk.sec()))
+        self.secondright.Szamokmini(self.clk.rightNumber(self.clk.sec()))
 
     def Minute(self):
         print(self.clk.min())
-        self.minuteleft.Szamokxd(self.clk.leftNumber(self.clk.min()))
-        self.minuteright.Szamokxd(self.clk.rightNumber(self.clk.min()))
+        self.minuteleft.Szamok(self.clk.leftNumber(self.clk.min()))
+        self.minuteright.Szamok(self.clk.rightNumber(self.clk.min()))
 
     def Hour(self):
         print(self.clk.hour24())
-        self.hourleft.Szamokxdd(self.clk.leftNumber(self.clk.hour24()))
-        self.hourright.Szamokxdd(self.clk.rightNumber(self.clk.hour24()))
+        self.hourleft.Szamok(self.clk.leftNumber(self.clk.hour24()))
+        self.hourright.Szamok(self.clk.rightNumber(self.clk.hour24()))
 
 
 
@@ -43,9 +44,7 @@ class main:
         self.clk.setOnSecondChangeListener(self.Second)
         self.clk.setOnMinuteChangeListener(self.Minute)
         self.clk.setOnHourChangeListener(self.Hour)
-
-
-
+        self.points.pontok()
 
 
         self.screen.mainloop()
