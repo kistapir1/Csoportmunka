@@ -5,18 +5,18 @@ from Clock import Clock
 class main:
     screen = Screen()
     clk = Clock(screen)
+    points_keret = Szam()
     secondleft=Szam()
     secondright=Szam()
     minuteleft=Szam()
     minuteright=Szam()
     hourright=Szam()
     hourleft=Szam()
-    points_keret = Szam()
     screen._delay(0)
 
+    points_keret.t.goto(-600, -100)
     hourleft.t.goto(-500, -50)
     hourright.t.goto(-300, -50)
-    points_keret.t.goto(-600, -100)
     minuteleft.t.goto(0, -50)
     minuteright.t.goto(200, -50)
     secondleft.t.goto(375, 230)
@@ -43,6 +43,7 @@ class main:
         self.clk.setOnSecondChangeListener(self.Second)
         self.clk.setOnMinuteChangeListener(self.Minute)
         self.clk.setOnHourChangeListener(self.Hour)
+
 
         self.screen.mainloop()
 
