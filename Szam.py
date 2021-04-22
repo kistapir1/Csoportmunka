@@ -774,8 +774,22 @@ class Szam:
         self.t.goto(x9, y9)
         self.t.setheading(rot9)
 
-    def pontok(self):
+    def pontok_keret(self):
+        self.t.color("red")
+        self.t.width(10)
+        self.t.fillcolor("black")
+        self.t.begin_fill()
+        for i in range(2):
+            self.t.forward(1200)
+            self.t.left(90)
+            self.t.forward(400)
+            self.t.left(90)
+        self.t.end_fill()
+
+        self.t.color("black")
+        self.t.width(1)
         self.t.penup()
+        self.t.goto(-100, -50)
         self.t.left(90)
         self.t.forward(80)
         self.t.pendown()
@@ -784,8 +798,6 @@ class Szam:
         self.t.forward(100)
         self.t.pendown()
         self.circle()
-        self.t.penup()
-        self.t.goto(0, 1000)
 
     def zeromini(self):
         self.t.clear()
