@@ -12,6 +12,7 @@ class Szam:
         self.t=Turtle()
         #self.screen._delay(0)
         self.t.speed(0)
+        self.t._delay(0)
 
     def Szamokmini(self, Szam:int):
         if Szam == self.jelenlegiszam:
