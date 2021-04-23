@@ -6,11 +6,10 @@ class Szam:
     #screen = Screen()
     t:Turtle
     jelenlegiszam:int = -1
-    #clk = Clock(screen)
+
 
     def __init__(self):
         self.t=Turtle()
-        #self.screen._delay(0)
         self.t.speed(0)
         self.t._delay(0)
 

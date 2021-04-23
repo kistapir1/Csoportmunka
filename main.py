@@ -12,7 +12,7 @@ class main:
     minuteright=Szam()
     hourright=Szam()
     hourleft=Szam()
-    screen._delay(0)
+
 
     points_keret.t.goto(-600, -100)
     hourleft.t.goto(-500, -50)
@@ -38,7 +38,7 @@ class main:
 
 
     def __init__(self):
-        self.screen.bgcolor("yellow")
+        self.screen.bgcolor("black")
         self.points_keret.pontok_keret()
         self.clk.setOnSecondChangeListener(self.Second)
         self.clk.setOnMinuteChangeListener(self.Minute)
